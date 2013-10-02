@@ -1,0 +1,8 @@
+xst -ise "Z:/Desktop/Xilinx/VGA/VGA/VGA.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/VGA/VGA_top.xst" -ofn "Z:/Desktop/Xilinx/VGA/VGA/VGA_top.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/VGA/VGA.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/VGA/VGA_top.xst" -ofn "Z:/Desktop/Xilinx/VGA/VGA/VGA_top.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/VGA/VGA.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "VGA_top.ngc" VGA_top.ngd
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/VGA/VGA.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "VGA_top.ngc" VGA_top.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/VGA/VGA.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o VGA_top_map.ncd VGA_top.ngd VGA_top.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/VGA/VGA.ise" -w -intstyle ise -ol std -t 1 VGA_top_map.ncd VGA_top.ncd VGA_top.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/VGA/VGA.ise" -intstyle ise -v 3 -s 5 -xml VGA_top VGA_top.ncd -o VGA_top.twr VGA_top.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/VGA/VGA.ise" -intstyle ise -f VGA_top.ut VGA_top.ncd

@@ -1,0 +1,117 @@
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+xst -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -ifn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.xst" -ofn "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Controller.syr"
+ngdbuild -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-5 "Snake_Controller.ngc" Snake_Controller.ngd
+map -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -p xc3s500e-fg320-5 -cm area -pr off -k 4 -c 100 -o Snake_Controller_map.ncd Snake_Controller.ngd Snake_Controller.pcf
+par -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -w -intstyle ise -ol std -t 1 Snake_Controller_map.ncd Snake_Controller.ncd Snake_Controller.pcf
+trce -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -v 3 -s 5 -xml Snake_Controller Snake_Controller.ncd -o Snake_Controller.twr Snake_Controller.pcf -ucf pins.ucf
+bitgen -ise "Z:/Desktop/Xilinx/VGA/Snake_Test/Snake_Test.ise" -intstyle ise -f Snake_Controller.ut Snake_Controller.ncd

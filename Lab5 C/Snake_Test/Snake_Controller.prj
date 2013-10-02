@@ -1,0 +1,4 @@
+verilog work "VGA.v"
+verilog work "Snake_VGA.v"
+verilog work "../../../Lab5 A/kbctrl.v"
+verilog work "Snake_Controller.v"

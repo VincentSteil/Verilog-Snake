@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map K.39 on Mon Apr 01 22:17:46 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "C<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "C<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "dOneEn" LOCATE = SITE "F15" LEVEL 1;
+COMP "dFourEn" LOCATE = SITE "F17" LEVEL 1;
+COMP "C<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "dThreeEn" LOCATE = SITE "H17" LEVEL 1;
+COMP "kclk" LOCATE = SITE "R12" LEVEL 1;
+PIN kclk_pin<0> = BEL "kclk" PINNAME PAD;
+PIN "kclk_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "Clk" LOCATE = SITE "B8" LEVEL 1;
+NET "kclk_BUFGP/IBUFG" BEL "kclk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "Clk_BUFGP/IBUFG" BEL "Clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+COMP "data" LOCATE = SITE "P11" LEVEL 1;
+COMP "C<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "led" LOCATE = SITE "J14" LEVEL 1;
+COMP "dTwoEn" LOCATE = SITE "C18" LEVEL 1;
+COMP "C<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "C<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "C<3>" LOCATE = SITE "D16" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,14 @@
+# begin LFP file Z:\Desktop\Xilinx\VGA\VGA\pins.lfp
+designfile VGA_top.ngd
+IO_GROUP "R" IO_GROUP="VGA_top" ;
+IO_GROUP "G" IO_GROUP="VGA_top" ;
+IO_GROUP "B" IO_GROUP="VGA_top" ;
+INST "VGA_top" COLOR=15  ;
+NET "R<2>" IO_GROUP="R"  ;
+NET "R<1>" IO_GROUP="R"  ;
+NET "R<0>" IO_GROUP="R"  ;
+NET "G<2>" IO_GROUP="G"  ;
+NET "G<1>" IO_GROUP="G"  ;
+NET "G<0>" IO_GROUP="G"  ;
+NET "B<1>" IO_GROUP="B"  ;
+NET "B<0>" IO_GROUP="B"  ;
