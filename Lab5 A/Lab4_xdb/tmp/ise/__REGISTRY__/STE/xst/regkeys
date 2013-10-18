@@ -1,6 +1,0 @@
-CommandLine
-C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise Z:/Desktop/Lab4/Lab4.ise -intstyle ise -ifn Z:/Desktop/Lab4/bcdToSevenSegTop.xst -ofn Z:/Desktop/Lab4/bcdToSevenSegTop.syr -finalclean 1
-s
-FormatString
-xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
-s

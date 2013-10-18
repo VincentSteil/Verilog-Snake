@@ -1,5 +1,0 @@
-verilog work "../Lab4 Real - Copy/seven_seg_converter.v"
-verilog work "niceDivider.v"
-verilog work "kbctrl.v"
-verilog work "bcdToSevenSeg.v"
-verilog work "bcdToSevenSegTop.v"
