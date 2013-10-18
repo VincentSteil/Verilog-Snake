@@ -1,0 +1,12 @@
+NUM_USER_FILES
+3
+s
+user_file_1
+VGA.v
+s
+user_file_2
+VGA_top.v
+s
+user_file_3
+pins.ucf
+s

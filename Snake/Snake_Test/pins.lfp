@@ -1,0 +1,14 @@
+# begin LFP file Z:\Desktop\Xilinx\VGA\Snake_Test\pins.lfp
+designfile Snake_Controller.ngd
+IO_GROUP "R" IO_GROUP="Snake_Controller" ;
+IO_GROUP "G" IO_GROUP="Snake_Controller" ;
+IO_GROUP "B" IO_GROUP="Snake_Controller" ;
+INST "Snake_Controller" COLOR=15  ;
+NET "R<2>" IO_GROUP="R"  ;
+NET "R<1>" IO_GROUP="R"  ;
+NET "R<0>" IO_GROUP="R"  ;
+NET "G<2>" IO_GROUP="G"  ;
+NET "G<1>" IO_GROUP="G"  ;
+NET "G<0>" IO_GROUP="G"  ;
+NET "B<1>" IO_GROUP="B"  ;
+NET "B<0>" IO_GROUP="B"  ;

@@ -1,0 +1,123 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+Z:/Desktop/Xilinx/VGA/VGA/VGA.ise -intstyle ise -v 3 -s 5 -xml VGA_top
+VGA_top.ncd -o VGA_top.twr VGA_top.pcf -ucf pins.ucf
+
+Design file:              VGA_top.ncd
+Physical constraint file: VGA_top.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.935|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW0            |B<0>           |    9.090|
+SW0            |B<1>           |    8.851|
+SW0            |G<0>           |    8.881|
+SW0            |G<1>           |    9.374|
+SW0            |G<2>           |    9.367|
+SW0            |R<0>           |    8.982|
+SW0            |R<1>           |    9.209|
+SW0            |R<2>           |    9.122|
+SW1            |B<0>           |   10.396|
+SW1            |B<1>           |   10.157|
+SW1            |G<0>           |    8.698|
+SW1            |G<1>           |    9.191|
+SW1            |G<2>           |    9.184|
+SW1            |R<0>           |    9.278|
+SW1            |R<1>           |    9.505|
+SW1            |R<2>           |    9.418|
+SW2            |B<0>           |   10.648|
+SW2            |B<1>           |   10.409|
+SW2            |G<0>           |    9.850|
+SW2            |G<1>           |   10.343|
+SW2            |G<2>           |   10.336|
+SW2            |R<0>           |    8.852|
+SW2            |R<1>           |    9.079|
+SW2            |R<2>           |    8.992|
+SW3            |B<0>           |    9.352|
+SW3            |B<1>           |    9.113|
+SW3            |G<0>           |    8.883|
+SW3            |G<1>           |    9.376|
+SW3            |G<2>           |    9.369|
+SW3            |R<0>           |    7.838|
+SW3            |R<1>           |    7.949|
+SW3            |R<2>           |    8.465|
+SW4            |B<0>           |    9.760|
+SW4            |B<1>           |    9.521|
+SW4            |G<0>           |    9.244|
+SW4            |G<1>           |    9.737|
+SW4            |G<2>           |    9.730|
+SW4            |R<0>           |    8.619|
+SW4            |R<1>           |    9.161|
+SW4            |R<2>           |    8.307|
+SW5            |B<0>           |    9.666|
+SW5            |B<1>           |    9.427|
+SW5            |G<0>           |    9.198|
+SW5            |G<1>           |    9.691|
+SW5            |G<2>           |    9.684|
+SW5            |R<0>           |    8.140|
+SW5            |R<1>           |    8.732|
+SW5            |R<2>           |    8.491|
+SW6            |B<0>           |    9.732|
+SW6            |B<1>           |    9.493|
+SW6            |G<0>           |    9.397|
+SW6            |G<1>           |    9.890|
+SW6            |G<2>           |    9.883|
+SW6            |R<0>           |    8.205|
+SW6            |R<1>           |    8.770|
+SW6            |R<2>           |    8.599|
+SW7            |B<0>           |   10.759|
+SW7            |B<1>           |   10.520|
+SW7            |G<0>           |   10.386|
+SW7            |G<1>           |   10.879|
+SW7            |G<2>           |   10.872|
+SW7            |R<0>           |    8.965|
+SW7            |R<1>           |    9.563|
+SW7            |R<2>           |    7.826|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Apr 01 15:26:53 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 131 MB
+
+
+
