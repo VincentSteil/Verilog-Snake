@@ -5,13 +5,7 @@ output SP;
 reg Q1, Q2, Q3;
 reg [16:0] count2ms;
 
-initial
-  begin
-    Q1 <= 0;
-    Q2 <= 0;
-    Q3 <= 0;
-	 count2ms <= 0;
-  end
+// doesn't actually debounce...
 
 assign SP = ~Q3 && Q2;
 
